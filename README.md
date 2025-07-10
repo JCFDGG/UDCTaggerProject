@@ -101,13 +101,11 @@ docker run -p 5000:5000 udc-tagger
 The current version only includes UDC categories starting with "A". Expanding to the full UDC range is encouraged for future developers or researchers interested in extending this work.
 
 ## ⚠️ Disclaimer on UDC Use
-
-This project references the Universal Decimal Classification (UDC) system for research and demonstration purposes only.
-
-   - The UDC system is copyrighted by the UDC Consortium.
-
-   - This project is not affiliated with or endorsed by the UDC Consortium.
-
-   - Any snippets or references to UDC content are limited and used solely for academic purposes.
-
-   - Users are responsible for ensuring their own compliance with UDC licensing terms if they choose to reuse, distribute, or build upon this work.
+>**Disclaimer**
+>This project references the Universal Decimal Classification (UDC) system for research and demonstration purposes only.
+>This project references the Universal Decimal Classification (UDC) system only for academic and demonstration purposes.
+>No UDC tables or classification structures are included or redistributed.
+>Example UDC predictions may appear in this project solely to illustrate model behavior, including failures.
+>The UDC system is copyrighted by the UDC Consortium.
+>This project is not affiliated with or endorsed by the UDC Consortium.
+>Users are responsible for ensuring their own compliance with UDC licensing terms.
