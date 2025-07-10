@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ model_name | capitalize }}</h1>
+<form method="POST">
+    <div class="mb-3">
+        <label for="prompt" class="form-label">Título ou descrição do livro:</label>
+        <input type="text" class="form-control" id="prompt" name="prompt" value="{{ prompt or '' }}">
+    </div>
+    <button type="submit" class="btn btn-primary">Gerar UDC</button>
+</form>
+
+
+<div class="mt-4">
+    <h4>Código previsto:</h4>
+    <p>{{ output_text }}</p>
+</div>
+
+
+{% if show_full_output %}
+    <div style="font-family: Arial, sans-serif; background-color: #fdfdfd; padding: 1.5rem; border-radius: 10px; max-width: 700px; margin: 2rem auto; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);">
+    <h2 style="margin-bottom: 1.5rem; color: #2c3e50; font-size: 1.5rem;">Tradução</h2>
+    
+    <div style="margin-bottom: 1rem;">
+        <strong style="color: #2c3e50;">6</strong>
+        <span style="color: #555;">→ Ciências aplicadas; Medicina; Tecnologia</span>
+    </div>
+
+    <div style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <strong style="color: #2c3e50;">61</strong>
+        <span style="color: #555;">→ Biologia humana; Medicina</span>
+    </div>
+
+    <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #ddd;">
+
+    <div style="margin-bottom: 1rem;">
+        <strong style="color: #2c3e50;">0</strong>
+        <span style="color: #555;">→ Auxiliar</span>
+    </div>
+
+    <div style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <strong style="color: #2c3e50;">05</strong>
+        <span style="color: #555;">→ Auxiliar de pessoas</span>
+    </div>
+
+    <div style="margin-left: 3rem; margin-bottom: 1rem;">
+        <strong style="color: #2c3e50;">056</strong>
+        <span style="color: #555;">→ Pessoas de acordo com saúde, constituição ou outro atributo hereditário</span>
+    </div>
+
+    <div style="margin-left: 4.5rem; margin-bottom: 1rem;">
+        <strong style="color: #2c3e50;">056.1</strong>
+        <span style="color: #555;">→ Pessoas de acordo com personalidade ou constituição</span>
+    </div>
+
+    <div style="margin-left: 6rem; color: #a00;">
+        <strong>056.11</strong>
+        <span>→ Código não encontrado. Cessando tradução para esta seção.</span>
+    </div>
+    </div>
+
+
+{% endif %}
+
+<button type="submit" class="btn btn-primary">Reportar erro.</button>
+{% endblock %}

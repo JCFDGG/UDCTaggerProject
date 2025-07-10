@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ model_name | capitalize }}</h1>
+<form method="POST">
+    <div class="mb-3">
+        <label for="prompt" class="form-label">Título ou descrição do livro:</label>
+        <input type="text" class="form-control" id="prompt" name="prompt" value="{{ prompt or '' }}">
+    </div>
+    <button type="submit" class="btn btn-primary">Gerar UDC</button>
+</form>
+
+
+<div class="mt-4">
+    <h4>Código previsto:</h4>
+    <p>{{ output_text }}</p>
+</div>
+
+
+{% if output_image %}
+    <div class="mt-4">
+        <h4>Gráfico de probabilidades:</h4>
+        <img src="data:image/png;base64,{{ output_image }}" class="img-fluid" />
+    </div>
+{% endif %}
+{% endblock %}

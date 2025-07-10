@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Selecione um modelo:</h1>
+
+<div class="list-group">
+    <a href="{{ url_for('model_view', model_name='std_knn') }}" class="list-group-item list-group-item-action">Standard KNN</a>
+    <a href="{{ url_for('model_view', model_name='sep_knn') }}" class="list-group-item list-group-item-action">Separate KNN</a>
+    <a href="{{ url_for('model_view', model_name='bert_classifier') }}" class="list-group-item list-group-item-action">BERT Classifier</a>
+    <a href="{{ url_for('model_view', model_name='t5_seq2seq') }}" class="list-group-item list-group-item-action">T5 Seq2Seq</a>
+</div>
+
+{% endblock %}
