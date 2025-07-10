@@ -76,15 +76,15 @@ A lightweight Flask application that exposes four classification models (not inc
 
 ## 🛠️ Tech Stack
 
-    - **Language:** Python
+- **Language:** Python
 
-    - **Framework:** Flask (for serving the models)
+- **Framework:** Flask (for serving the models)
 
-    - **Tools:** Jupyter Notebooks for data prep and training
+  - **Tools:** Jupyter Notebooks for data prep and training
 
-    - **Pre-trained models:** Bert and T5
+  - **Pre-trained models:** Bert and T5
 
-    - **Deployment:** Docker
+  - **Deployment:** Docker
 
 ## 🐳 How to Run
 
