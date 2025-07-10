@@ -12,7 +12,7 @@ Uma aplicação leve em Flask que expõe quatro modelos de classificação (não
 ## 🧪 Funcionalidades
 
 - Aceita entrada do usuário via interface web (Flask)
-- Prediz códigos de classificação da CDU
+- - Prediz códigos de classificação da CDU
 - Inclui scripts e notebooks para:
   - Criação do conjunto de dados
   - Treinamento e avaliação dos modelos
@@ -62,17 +62,17 @@ It was developed as a final project for a college class.
 A lightweight Flask application that exposes four classification models (not included in this repo). Users can submit a book title or description and receive a predicted UDC number in return.
 ## 🧪 Features
 
-    Accepts user input via web interface (Flask)
+- Accepts user input via web interface (Flask)
 
-    Predicts UDC classification codes
+- Predicts UDC classification codes
 
-    Includes scripts and notebooks for:
+ - Includes scripts and notebooks for:
 
-       - Dataset creation
+     - Dataset creation
 
-       - Model training and evaluation
+     - Model training and evaluation
 
-    ⚠️ Currently supports only UDC categories starting with the letter A.
+⚠️ Currently supports only UDC categories starting with the letter A.
 
 ## 🛠️ Tech Stack
 
@@ -80,11 +80,11 @@ A lightweight Flask application that exposes four classification models (not inc
 
 - **Framework:** Flask (for serving the models)
 
-  - **Tools:** Jupyter Notebooks for data prep and training
+- **Tools:** Jupyter Notebooks for data prep and training
 
-  - **Pre-trained models:** Bert and T5
+- **Pre-trained models:** Bert and T5
 
-  - **Deployment:** Docker
+- **Deployment:** Docker
 
 ## 🐳 How to Run
 
